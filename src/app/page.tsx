@@ -17,8 +17,14 @@ export default function Home() {
   const [tokens, setTokens] = useState<Token[]>([])
   const [filters, setFilters] = useState({
     minMarketCap: 0,
-    minInitialBuy: 0,
-    description: ''
+    maxInitialBuy: 0,
+    description: '',
+    tags: '',
+    requiredLinks: {
+      twitter: false,
+      telegram: false,
+      website: false
+    }
   })
 
   const handleEnterApp = () => {
