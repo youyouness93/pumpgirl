@@ -17,20 +17,22 @@ interface TokenMonitorProps {
     minMarketCap: number;
     maxInitialBuy: number;
     description: string;
-    requiredLinks?: {
-      twitter?: boolean;
-      telegram?: boolean;
-      website?: boolean;
+    tags: string;
+    requiredLinks: {
+      twitter: boolean;
+      telegram: boolean;
+      website: boolean;
     };
   };
   setFilters: React.Dispatch<React.SetStateAction<{
     minMarketCap: number;
     maxInitialBuy: number;
     description: string;
-    requiredLinks?: {
-      twitter?: boolean;
-      telegram?: boolean;
-      website?: boolean;
+    tags: string;
+    requiredLinks: {
+      twitter: boolean;
+      telegram: boolean;
+      website: boolean;
     };
   }>>;
   onNewToken: (token: Token) => void;
