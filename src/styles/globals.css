@@ -1,0 +1,42 @@
+/* GameBoy Checkbox Style */
+.link-option {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.link-option:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.gameboy-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 3px solid #879372;
+  background: #9ca384;
+  position: relative;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.gameboy-checkbox:checked::before {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #1f1f1f;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gameboy-checkbox:hover {
+  background: #a5ac8c;
+}
